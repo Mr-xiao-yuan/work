@@ -1,25 +1,24 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div>
     <tabbar>
       <tabbaritem path='/home'>
-          <img slot="item-icon" src="./../../img/assets/home.png" />
-          <img slot="item-icon1" src="./../../img/assets/home1.png" />
+          <img slot="item-icon" src="@/assets/img/home.png" />
+          <img slot="item-icon1" src="@/assets/img/home1.png" />
           <div slot="item-text">首页</div>
         </tabbaritem>
         <tabbaritem path='/classification'>
-          <img slot="item-icon" src="./../../img/assets/classification.png" />
-          <img slot="item-icon1" src="./../../img/assets/classification1.png" />
+          <img slot="item-icon" src="@/assets/img/classification.png" />
+          <img slot="item-icon1" src="@/assets/img/classification1.png" />
           <div slot="item-text">分类</div>
         </tabbaritem>
         <tabbaritem path='/Shopping'>
-          <img slot="item-icon" src="./../../img/assets/Shopping.png" />
-          <img slot="item-icon1" src="./../../img/assets/Shopping1.png" />
+          <img slot="item-icon" src="@/assets/img/Shopping.png" />
+          <img slot="item-icon1" src="@/assets/img/Shopping1.png" />
           <div slot="item-text">购物车</div>
         </tabbaritem>
         <tabbaritem path='/my'>
-          <img slot="item-icon" src="./../../img/assets/my.png" />
-          <img slot="item-icon1" src="./../../img/assets/my1.png" />
+          <img slot="item-icon" src="@/assets/img/my.png" />
+          <img slot="item-icon1" src="@/assets/img/my1.png" />
           <div slot="item-text">我的</div>
         </tabbaritem>
     </tabbar>
@@ -28,15 +27,17 @@
 </template>
 
 <script>
-  import tabbar from './components/tabbar'
-  import tabbaritem from './components/tabbaritem'
+  import tabbar from '@/components/common/tabbar/tabbar'
+  import tabbaritem from '@/components/common/tabbar/tabbaritem'
 
   export default {
-    name: 'App',
+    name: 'tabBar',
     data() {
       return {
+		  
        }
     },
+	
     components: {
       tabbar,
       tabbaritem

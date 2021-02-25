@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-	  
-	  <tabBar>W</tabBar>
+	  <router-view/>
+	  <tabBar/>
   </div>
 </template>
 
 <script>
-import tabBar from 'components/content/tabBar.vue'
+import tabBar from '@/components/content/tabBar.vue'
 
 export default {
   name: 'App',
@@ -18,4 +18,5 @@ export default {
 
 <style>
 @import url("./assets/css/base.css");
+
 </style>

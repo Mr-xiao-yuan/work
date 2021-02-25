@@ -1,7 +1,9 @@
-module.exports = {
-	configurewebpack: {
-		resolve: {
-			
-		}
-	}
-}
+// module.exports = {
+//   configureWebpack: {
+//     resolve: {
+//       alias: {
+	
+//       }
+//     }
+//   }
+// }
