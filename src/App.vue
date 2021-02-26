@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import tabBar from '@/components/content/tabBar.vue'
+import tabBar from '@/components/content/tabBar'
 
 export default {
   name: 'App',
@@ -18,5 +18,8 @@ export default {
 
 <style>
 @import url("./assets/css/base.css");
-
+#app{
+	width: 500px;
+	margin: 0 auto;
+}
 </style>
