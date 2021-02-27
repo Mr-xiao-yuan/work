@@ -30,6 +30,7 @@
   width: 500px;
   margin: 0 auto;
   bottom: 0;
+  
 }
 
 </style>

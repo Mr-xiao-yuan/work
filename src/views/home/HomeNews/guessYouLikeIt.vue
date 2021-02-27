@@ -9,7 +9,8 @@
 			<p>{{i.title}}</p>
 			</div>
 			<div class="productPrice">
-				<p>￥{{i.Price}}</p>
+				<div id="zhe">新人专享满10减3</div>
+				<span>￥{{i.Price}}</span>
 				<img src="@/assets/img/baoyou.png" alt="">
 				<p>销量{{i.salesVolume}}</p>
 			</div>
@@ -42,8 +43,6 @@
 		display: flex;
 		white-space:nowrap;
 		width: 730px;
-		overflow: hidden;
-		/* text-overflow: ellipsis; */
 		line-height: 50px;
 	}
 	.title p {
@@ -52,23 +51,57 @@
 		text-align: center;
 	}
 	.product{
-		width: 250px;
-		height: 300px;
+		width: 230px;
+		height: 385px;
 		float: left;
+		border-radius: 10px;
+		border: 0.5px solid #F0F0F0;
+		margin: 5px 10px 5px 10px;
+		
 	}
 	.productBody img{
-		width: 240px;
+		width: 230px;
 		height: 270px;
-		margin: 0 5px 0 5px;
+		border-radius: 10px 10px 0 0;
 	}
-	/* .productBody p {
-		width: 200px;
-		height: 36px;
-		text-overflow: ellipsis;
-	} */
+	.productBody p {
+		width: 240px;
+		line-height: 20px;
+		white-space:nowrap;/* 文本不换行 */
+		overflow: hidden;
+		text-overflow: ellipsis;/* 超出宽度显示为省略号 */
+	    margin-top: 15px;
+	}
+	.productPrice{
+		margin-top: 10px;
+	}
+	.productPrice #zhe{
+		width: 140px;
+		line-height: 20px;
+		text-align: center;
+		border: 1px solid deeppink;
+		border-radius: 8px;
+		color: deeppink;
+		margin-bottom: 18px;
+	}
+	.productPrice span{
+		float: left;
+		font-weight: bold;
+		font-size: 20px;
+		color: deeppink;
+	}
 	.productPrice img{
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
+		float: left;
 	}
-	
+	.productPrice p{
+		float: right;
+		background-color: rgb(255,192,203,0.8);
+		color: deeppink;
+		width: 63px;
+		line-height: 23px;
+		text-align: center;
+		border-radius: 10px;
+	}
 </style>
