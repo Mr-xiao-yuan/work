@@ -4,12 +4,17 @@
 			<div slot='center'>我的购物车</div>
 			<div slot='right'>管理</div>
 		</navbar>
-		<div class="cowry-data"></div>
+		<div class="cowry-data">
+			<cowry-tabbar></cowry-tabbar>
+			<cowry-item></cowry-item>
+		</div>
 	</div>
 </template>
 
 <script>
 	import Navbar from '@/components/common/navbar/Navbar'
+	import cowryTabbar from '@/views/Shopping/cowry/cowryTabbar'
+	import cowryItem from '@/views/Shopping/cowry/cowryItem'
 	export default {
 		name: 'Shopping',
 		data() {
@@ -17,7 +22,9 @@
 		},
 
 		components: {
-			Navbar
+			Navbar,
+			cowryTabbar,
+			cowryItem
 		},
 	}
 </script>

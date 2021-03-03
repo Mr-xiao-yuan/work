@@ -72,7 +72,7 @@
 		border-radius: 10px 10px 0 0;
 	}
 	.productBody p {
-		width: 240px;
+		width: 230px;
 		line-height: 20px;
 		white-space:nowrap;/* 文本不换行 */
 		overflow: hidden;
@@ -106,7 +106,7 @@
 		float: right;
 		background-color: rgb(255,192,203,0.8);
 		color: deeppink;
-		width: 70px;
+		width: 80px;
 		line-height: 23px;
 		text-align: center;
 		border-radius: 10px;
