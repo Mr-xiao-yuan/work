@@ -1,9 +1,9 @@
 <template>
-	<div class="guessyoulikeit">
+	<div id="cnxh">
 		<div class="title">
-			<p v-for="i in text">{{i}}</p>
+			<p @click="cnxhc(index)" v-for="(i,index) in text">{{i}}</p>
 		</div>
-		<div class="product" v-for="(i,index) in $store.state.guessYouLikeIt">
+		<div class="product" v-for="(i,index) in $store.state.cnxh[tex]">
 			<div class="productBody">
 			<img :src="i.img" alt="">
 			<p>{{i.title}}</p>
@@ -11,7 +11,7 @@
 			<div class="productPrice">
 				<div id="zhe">新人专享满10减3</div>
 				<span>￥{{i.Price}}</span>
-				<img src="@/assets/img/baoyou.png" alt="">
+				<img src="@/assets/icon/baoyou.png" alt="">
 				<p>销量{{i.salesVolume}}</p>
 			</div>
 			
@@ -21,32 +21,39 @@
 
 <script>
 	export default {
-		name: 'guessYouLikeIt',
+		name: 'cnxh',
 		data() {
 			return {
 				text: [
-					'热门', '时尚套装', '小个子穿搭', '微胖穿搭', '裙子', '上衣', '裤子'
-				]
+					'热门', '时尚套装', '裙子', '上衣', '裤子'
+				],
+				tex:0,
 			}
 		},
 		computed: {
 
 		},
 		methods: {
-			
+			cnxhc(index){
+				this.tex = index;
+			}
 		}
 	}
 </script>
 
 <style>
 	.title {
-		display: flex;
+		
+		float: left;
 		white-space:nowrap;
-		width: 730px;
+		width: 500px;
+		
 		line-height: 50px;
+		height: 50px;
 	}
 	.title p {
-		flex: 1;
+		float: left;
+		width: 100px;
 		font-size: 18px;
 		text-align: center;
 	}
@@ -99,7 +106,7 @@
 		float: right;
 		background-color: rgb(255,192,203,0.8);
 		color: deeppink;
-		width: 63px;
+		width: 70px;
 		line-height: 23px;
 		text-align: center;
 		border-radius: 10px;

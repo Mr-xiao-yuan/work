@@ -2,23 +2,23 @@
   <div>
     <tabbar>
       <tabbaritem path='/home'>
-          <img slot="item-icon" src="@/assets/img/home.png" />
-          <img slot="item-icon1" src="@/assets/img/home1.png" />
+          <img slot="item-icon" src="@/assets/icon/home.png" />
+          <img slot="item-icon1" src="@/assets/icon/home1.png" />
           <div slot="item-text">首页</div>
         </tabbaritem>
-        <tabbaritem path='/classification'>
-          <img slot="item-icon" src="@/assets/img/classification.png" />
-          <img slot="item-icon1" src="@/assets/img/classification1.png" />
+        <tabbaritem path='/classify'>
+          <img slot="item-icon" src="@/assets/icon/classify.png" />
+          <img slot="item-icon1" src="@/assets/icon/classify1.png" />
           <div slot="item-text">分类</div>
         </tabbaritem>
         <tabbaritem path='/Shopping'>
-          <img slot="item-icon" src="@/assets/img/Shopping.png" />
-          <img slot="item-icon1" src="@/assets/img/Shopping1.png" />
+          <img slot="item-icon" src="@/assets/icon/Shopping.png" />
+          <img slot="item-icon1" src="@/assets/icon/Shopping1.png" />
           <div slot="item-text">购物车</div>
         </tabbaritem>
         <tabbaritem path='/my'>
-          <img slot="item-icon" src="@/assets/img/my.png" />
-          <img slot="item-icon1" src="@/assets/img/my1.png" />
+          <img slot="item-icon" src="@/assets/icon/my.png" />
+          <img slot="item-icon1" src="@/assets/icon/my1.png" />
           <div slot="item-text">我的</div>
         </tabbaritem>
     </tabbar>

@@ -19,7 +19,11 @@ export default {
 <style>
 @import url("./assets/css/base.css");
 #app{
-	width: 500px;
-	margin: 0 auto;
+	width: 502px;
+	float: left;
+	padding-bottom: 50px;
+	margin-left: 100px;
+	font-size: 14px;
+	border: 1px solid #F0F0F0;
 }
 </style>

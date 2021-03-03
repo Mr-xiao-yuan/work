@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 const home = () => import('@/views/home/home')
-const classification = () => import('@/views/classification/classification')
+const classify = () => import('@/views/classify/classify')
 const Shopping = () => import('@/views/Shopping/Shopping')
 const my = () => import('@/views/my/my')
 
@@ -17,11 +17,21 @@ const routes = [
   },
   {
     path: '/home',
-    component: home
+    component: home,
+	// children:[
+	// 	{
+	// 	  path: '',
+	// 	  redirect: '/home'
+	// 	},
+	// 	{
+	// 	  path: '',
+	// 	  redirect: '/home'
+	// 	}
+	// ]
   },
   {
-    path: '/classification',
-    component: classification
+    path: '/classify',
+    component: classify
   },
   {
     path: '/Shopping',

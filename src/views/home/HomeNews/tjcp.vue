@@ -11,7 +11,7 @@
 
 <script>
 	export default {
-		name: "recommendView",
+		name: "tjcp",
 		props: {
 			recommends: {
 				type: Array,

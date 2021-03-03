@@ -21,12 +21,12 @@
       activeColor: {
         type: String,
         // 如果没有设置颜色,默认pink
-        default: 'pink'
+        default: 'red'
       }
     },
     data() {
       return {
-        // isActive: true
+        
       };
     },
     computed: {
@@ -48,17 +48,14 @@
     flex: 1;
     text-align: center;
     height: 49px;
-    font-size: 14px;
   }
 
   #tab-bar-item img {
     width: 24px;
     height: 24px;
-    margin-top: 3px;
+    margin: 3px 0 3px 0;
     vertical-align: middle;
   }
 
-  .active {
-    color: red;
-  }
+  
 </style>

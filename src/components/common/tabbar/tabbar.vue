@@ -24,11 +24,8 @@
   background: #f6f6f6;
 
   position: fixed;
-  left: 0;
-  right: 0;
-  
+  height: 50px;
   width: 500px;
-  margin: 0 auto;
   bottom: 0;
   
 }

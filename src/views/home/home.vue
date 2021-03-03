@@ -1,9 +1,9 @@
 <template>
   <div id="home">
-	  <navbar class="home-nav"><div slot = 'center'>购物街</div></navbar>
+	  <navbar><div slot = 'center'>购物街</div></navbar>
 	  <swiper-home/>
-	  <recommend-view :recommends = 'recommends'/>
-	  <guess-you-like-it/>
+	  <tjcp :recommends = 'recommends'/>
+	  <cnxh/>
   </div>
 </template>
 
@@ -11,8 +11,8 @@
   import Navbar from '@/components/common/navbar/Navbar'
   import {getHome} from '@/network/home'
   import swiperHome from '@/views/home/HomeNews/swiperHome'
-  import recommendView from '@/views/home/HomeNews/recommendView'
-  import guessYouLikeIt from '@/views/home/HomeNews/guessYouLikeIt'
+  import tjcp from '@/views/home/HomeNews/tjcp'
+  import cnxh from '@/views/home/HomeNews/cnxh'
   export default {
     name: 'home',
     data() {
@@ -25,8 +25,8 @@
     components: {
 		Navbar,
 		swiperHome,
-		recommendView,
-		guessYouLikeIt
+		tjcp,
+		cnxh
 	},
 	created(){
 		getHome().then(res => {
@@ -40,9 +40,7 @@
   }
 </script>
 <style scoped>
-  .home-nav{
-	  /* 调用开始设置好的css(assets.css.base.css) */
-	  background: var(--color-tint);
-	  color: white;
-  }
+ /* #home{
+	  border: 1px solid black;
+  } */
 </style>

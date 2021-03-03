@@ -22,10 +22,12 @@
 <style>
 	.nav-bar{
 		display: flex;
-		height: 45px;
-		line-height: 45px;
+		height: 50px;
+		line-height: 50px;
 		text-align: center;
-		box-shadow: 1px 1px 5px #888888
+		box-shadow: 1px 1px 10px #888888;
+		background: var(--color-tint);
+		color: white;
 	}
 	
 	.left,
@@ -34,6 +36,6 @@
 	}
 	.center{
 		flex: 1;
-		
 	}
+	
 </style>
