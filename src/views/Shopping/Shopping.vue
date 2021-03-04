@@ -28,12 +28,16 @@
 		},
 	}
 </script>
-<style scoped>
-.cowry-data{
-	width: 490px;
-	background-color: #E0E0E0;
-	margin: 10px 5px 10px 5px;
-	height: 200px;
-	border-radius: 10px;
-}
+<style scoped="scoped">
+	#Shopping{
+		width: 35.71rem;
+		height: 71.43rem;
+	}
+	.cowry-data {
+		width: 35rem;
+		background-color: #E0E0E0;
+		margin: 0.71rem 0.36rem 0.71rem 0.36rem;
+		height: 14.29rem;
+		border-radius: 0.71rem;
+	}
 </style>

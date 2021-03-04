@@ -1,6 +1,6 @@
 <template>
-	<div id="opTion">
-		<img :src='img[indexs]' alt="" @click="isActive">
+	<div id="opTion" @click="isActive">
+		<img :src='img[indexs]' alt="" >
 	</div>
 </template>
 
@@ -28,5 +28,8 @@
 </script>
 
 <style>
-
+img{
+	width: 2.14rem;
+	height: 2.14rem;
+}
 </style>

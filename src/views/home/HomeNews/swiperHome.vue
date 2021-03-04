@@ -22,7 +22,7 @@
 					loop: true, //让轮播图循环
 					autoplay: 3000, //切换速度3000ms
 					autoplayDisableOnInteraction: false, //即使操作swiper，图片照样会自动切换
-					effect: 'flip',
+					effect: 'flip',//切换效果
 					observer: true, //修改swiper自己或子元素时，自动初始化swiper
 					observeParents: true //修改swiper的父元素时，自动初始化swiper
 				},
@@ -48,7 +48,7 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	.swiper-box {
 		overflow: hidden;
 		width: 100%;
@@ -56,6 +56,6 @@
 
 	.swiper-img {
 		width: 100%;
-		height: 270px;
+		height: 19.29rem;
 	}
 </style>

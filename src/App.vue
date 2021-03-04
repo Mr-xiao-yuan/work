@@ -16,14 +16,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped="scoped">
 @import url("./assets/css/base.css");
 #app{
-	width: 502px;
+	width: 35.86rem;
 	float: left;
-	padding-bottom: 50px;
-	margin-left: 100px;
-	font-size: 14px;
-	border: 1px solid #F0F0F0;
+	padding-bottom: 3.57rem;
+	margin-left: 7.14rem;
+	font-size: 1rem;
+	border: 0.07rem solid #F0F0F0;
 }
 </style>

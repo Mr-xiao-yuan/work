@@ -24,8 +24,8 @@
   background: #f6f6f6;
 
   position: fixed;
-  height: 50px;
-  width: 500px;
+  height: 3.57rem;
+  width: 35.71rem;
   bottom: 0;
   
 }

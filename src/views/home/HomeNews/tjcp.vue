@@ -21,20 +21,20 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 .recommend{
 	display: flex;
 	text-align: center;
-	font-size: 14px;
-	padding: 10px 0 20px 0;
-	border-bottom: 10px solid #eee;
+	font-size: 1rem;
+	padding: 0.71rem 0 1.43rem 0;
+	border-bottom: 0.71rem solid #eee;
 }
 .recommend-item{
 	flex: 1;
 }
 .recommend-item img{
-	width: 120px;
-	height: 120px;
-	margin-bottom: 10px;
+	width: 8.57rem;
+	height: 8.57rem;
+	margin-bottom: 0.71rem;
 }
 </style>

@@ -36,11 +36,9 @@
 			this.recommends = res.data.data.recommend.list
 			
 		})
-	}
+	},
   }
 </script>
-<style scoped>
- /* #home{
-	  border: 1px solid black;
-  } */
+<style scoped="scoped">
+ 
 </style>

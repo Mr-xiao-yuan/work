@@ -37,6 +37,8 @@
     },
     methods: {
       itemClick() {
+		//默认页面顶部
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.$router.replace(this.path).catch(err => {})
       }
     },
@@ -47,13 +49,13 @@
   #tab-bar-item {
     flex: 1;
     text-align: center;
-    height: 49px;
+    height: 3.5rem;
   }
 
   #tab-bar-item img {
-    width: 24px;
-    height: 24px;
-    margin: 3px 0 3px 0;
+    width: 1.71rem;
+    height: 1.71rem;
+    margin: 0.21rem 0 0.21rem 0;
     vertical-align: middle;
   }
 

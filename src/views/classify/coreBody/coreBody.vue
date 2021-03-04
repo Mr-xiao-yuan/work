@@ -23,20 +23,20 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	#coreBody{
-		margin: 15px 10px 15px 10px;
+		margin: 1.07rem 0.71rem 1.07rem 0.71rem;
 	}
 	.coreContent{
-		margin-left: 20px;
+		margin-left: 1.43rem;
 	}
 	.coreText{
 		float: left;
-		margin: 10px 10px 10px 10px;
+		margin: 0.71rem 0.71rem 0.71rem 0.71rem;
 	}
 	.coreText img{
-		width: 100px;
-		height: 100px;
+		width: 7.14rem;
+		height: 7.14rem;
 	}
 	.coreText p{
 		text-align: center;

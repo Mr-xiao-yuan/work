@@ -3,7 +3,7 @@
 		<navbar><div slot='center'>商品分类</div></navbar>
 		<div class="name">
 			<ul>
-				<li class="namebox" v-for='(i,index) in libox' @click="classifyc(index)">{{i}}<p>></p></li>
+				<li class="namebox" v-for='(i,index) in libox' @click="classifyc(index)">{{i}}<p> > </p></li>
 			</ul>
 		</div>
 		<core-body class="core"></core-body>
@@ -19,7 +19,7 @@
 		data() {
 			return {
 				libox: [
-					'美妆','女装','母婴','珠宝饰品','零食','图书','鲜花','手机','厨具','家电','医药',
+					'美妆','女装','母婴','珠宝饰品','零食','图书','鲜花','手机','厨具','家电','医药','家具','建材','文具','手机','电脑','玩具', 	 	
 				],
 				
 			};
@@ -36,25 +36,31 @@
 		}
 	}
 </script>
-<style scoped>
+<style scoped="scoped">
+	.classify{
+		width: 35.71rem;
+	}
 	.name {
-		width: 100px;
+		width: 7.14rem;
 		background: #d0d0d0;
 		float: left;
 	}
 	.namebox{
 		text-align: center;
 		list-style: none;
-		line-height: 60px;
+		line-height: 4.28rem;
+	}
+	.namebox:hover{
+		background-color: orange;
+		color: white;
 	}
 	.namebox p{
 		float: right;
-		font-size: 20px;
-		/* text-align: center; */
+		font-size: 1.43rem;
 		opacity: 0.5;
 	}
 	.core{
-		width: 380px;
+		width: 27.14rem;
 		float: left;
 	}
 </style>

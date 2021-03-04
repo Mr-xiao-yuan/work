@@ -18,16 +18,6 @@ const routes = [
   {
     path: '/home',
     component: home,
-	// children:[
-	// 	{
-	// 	  path: '',
-	// 	  redirect: '/home'
-	// 	},
-	// 	{
-	// 	  path: '',
-	// 	  redirect: '/home'
-	// 	}
-	// ]
   },
   {
     path: '/classify',

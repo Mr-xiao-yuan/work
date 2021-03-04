@@ -41,74 +41,77 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	.title {
 		
 		float: left;
 		white-space:nowrap;
-		width: 500px;
-		
-		line-height: 50px;
-		height: 50px;
+		width: 35.71rem;
+		line-height: 3.57rem;
+		height: 3.57rem;
 	}
 	.title p {
 		float: left;
-		width: 100px;
-		font-size: 18px;
+		width: 7.14rem;
+		font-size: 1.29rem;
 		text-align: center;
 	}
+	.title p:hover{
+		background-color: orange;
+		color: white;
+	}
 	.product{
-		width: 230px;
-		height: 385px;
+		width: 16.43rem;
+		height: 27.5rem;
 		float: left;
-		border-radius: 10px;
-		border: 0.5px solid #F0F0F0;
-		margin: 5px 10px 5px 10px;
+		border-radius: 0.71rem;
+		border: 0.036rem solid #F0F0F0;
+		margin: 0.36rem 0.71rem 0.36rem 0.71rem;
 		
 	}
 	.productBody img{
-		width: 230px;
-		height: 270px;
-		border-radius: 10px 10px 0 0;
+		width: 16.43rem;
+		height: 19.29rem;
+		border-radius: 0.71rem 0.71rem 0 0;
 	}
 	.productBody p {
-		width: 230px;
-		line-height: 20px;
+		width: 16.43rem;
+		line-height: 1.43rem;
 		white-space:nowrap;/* 文本不换行 */
 		overflow: hidden;
 		text-overflow: ellipsis;/* 超出宽度显示为省略号 */
-	    margin-top: 15px;
+	    margin-top: 1.07rem;
 	}
 	.productPrice{
-		margin-top: 10px;
+		margin-top: 0.71rem;
 	}
 	.productPrice #zhe{
-		width: 140px;
-		line-height: 20px;
+		width: 10rem;
+		line-height: 1.43rem;
 		text-align: center;
-		border: 1px solid deeppink;
-		border-radius: 8px;
+		border: 0.07rem solid deeppink;
+		border-radius: 0.57rem;
 		color: deeppink;
-		margin-bottom: 18px;
+		margin-bottom: 1.29rem;
 	}
 	.productPrice span{
 		float: left;
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 1.43rem;
 		color: deeppink;
 	}
 	.productPrice img{
-		width: 25px;
-		height: 25px;
+		width: 1.79rem;
+		height: 1.79rem;
 		float: left;
 	}
 	.productPrice p{
 		float: right;
 		background-color: rgb(255,192,203,0.8);
 		color: deeppink;
-		width: 80px;
-		line-height: 23px;
+		width: 5.71rem;
+		line-height: 1.64rem;
 		text-align: center;
-		border-radius: 10px;
+		border-radius: 0.71rem;
 	}
 </style>

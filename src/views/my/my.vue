@@ -40,73 +40,77 @@
 		},
 	}
 </script>
-<style scoped>
+<style scoped="scoped">
+	#my{
+		width: 35.71rem;
+		height: 71.43rem;
+	}
 	.user {
 		background: var(--color-tint);
 	}
 
 	.user-box {
-		margin: 0px 20px 0px 20px;
-		height: 100px;
+		margin: 0 1.43rem 0 1.43rem;
+		height: 7.14rem;
 		font-size: 14px;
 	}
 
 	.user-left img {
-		width: 100px;
-		height: 100px;
+		width: 7.14rem;
+		height: 7.14rem;
 		float: left;
 	}
 
 	.user-center {
-		width: 320px;
-		height: 100px;
-		margin-left: 10px;
+		width: 22.86rem;
+		height: 7.14rem;
+		margin-left: 0.71rem;
 		float: left;
 		color: white;
 	}
 
 	.user-center h2 {
-		line-height: 50px;
+		line-height: 3.57rem;
 	}
 
 	.user-center-xia {
-		height: 30px;
+		height: 2.14rem;
 	}
 
 	.user-center-xia img {
-		width: 20px;
-		height: 20px;
+		width: 1.43rem;
+		height: 1.43rem;
 		float: left;
 		margin-top: 5px;
 	}
 
 	.user-center-xia p {
-		line-height: 30px;
+		line-height: 2.14rem;
 		float: left;
 	}
 
 	.user-right {
-		width: 30px;
-		height: 100px;
+		width: 2.14rem;
+		height: 7.14rem;
 		float: right;
 	}
 
 	.user-right img {
-		width: 30px;
-		height: 30px;
-		margin-top: 35px;
+		width: 2.14rem;
+		height: 2.14rem;
+		margin-top: 2.5rem;
 	}
 
 	.item {
-		line-height: 50px;
+		line-height: 3.57rem;
 		background: #f6f6f6;
-		border-top: 5px solid white;
+		border-top: 0.36rem solid white;
 	}
 
 	.item img {
-		width: 20px;
-		height: 20px;
-		margin-top: 15px;
+		width: 1.43rem;
+		height: 1.43rem;
+		margin-top: 1.07rem;
 		float: right;
 	}
 </style>
