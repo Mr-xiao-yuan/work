@@ -8,6 +8,7 @@
 			<cowry-tabbar></cowry-tabbar>
 			<cowry-item></cowry-item>
 		</div>
+		<cowry-footer class="footer"></cowry-footer>
 	</div>
 </template>
 
@@ -15,6 +16,7 @@
 	import Navbar from '@/components/common/navbar/Navbar'
 	import cowryTabbar from '@/views/Shopping/cowry/cowryTabbar'
 	import cowryItem from '@/views/Shopping/cowry/cowryItem'
+	import cowryFooter from '@/views/Shopping/cowry/cowryFooter'
 	export default {
 		name: 'Shopping',
 		data() {
@@ -24,7 +26,8 @@
 		components: {
 			Navbar,
 			cowryTabbar,
-			cowryItem
+			cowryItem,
+			cowryFooter
 		},
 	}
 </script>
@@ -39,5 +42,13 @@
 		margin: 0.71rem 0.36rem 0.71rem 0.36rem;
 		height: 14.29rem;
 		border-radius: 0.71rem;
+	}
+	.footer{
+		width: 35.71rem;
+		height: 7.14rem;
+		background-color: #E0E0E0;
+		/* margin: 0 0.36rem 0 0.36rem; */
+		bottom: 0;
+		position: fixed;
 	}
 </style>

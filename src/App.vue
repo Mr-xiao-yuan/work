@@ -25,5 +25,6 @@ export default {
 	margin-left: 7.14rem;
 	font-size: 1rem;
 	border: 0.07rem solid #F0F0F0;
+	cursor: pointer;
 }
 </style>

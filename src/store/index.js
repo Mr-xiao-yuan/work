@@ -5,6 +5,9 @@ Vue.use(Vuex)
 
 const state = {
 	num: 0,
+	indexs: 0,
+	indexs1: 0,
+	indexs2: 0,
 	cnxh: [
 		[{
 				img: 'https://s5.mogucdn.com/mlcdn/55cf19/210126_5kb6bee4jldii06if4ke6h48i6jh9_640x962.png_750x1000.v1cAC.81.jpg',

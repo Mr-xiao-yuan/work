@@ -1,6 +1,8 @@
 <template>
 	<div id="cowryTabbar">
-		<op-tion class="icon1">></op-tion>
+		<div class="icon1" @click="isActive">
+			<img :src='img[$store.state.indexs1]' alt="" >
+		</div>
 		<div class="icon2">
 			<img class="img1" src="@/assets/icon/shop.png" alt="">
 			<h2>YiYi衣可秀</h2>
@@ -11,17 +13,25 @@
 </template>
 
 <script>
-	import opTion from '@/components/common/option/opTion'
 	export default {
 		name: 'cowryTabbar',
 		data() {
 			return {
-			    
+				img: [
+					require('../../../assets/icon/weixuan.png'),
+					require('../../../assets/icon/yixuan.png')
+				]
 			}
 		},
 		components: {
-			opTion
+			
 		},
+		methods: {
+			isActive(){
+				this.$store.state.indexs1 = this.$store.state.indexs1==0?1:0;
+				this.$store.state.indexs = this.$store.state.indexs1;
+			}
+		}
 	}
 </script>
 
@@ -33,9 +43,12 @@
 	.icon1 {
 		width: 2.86rem;
 		height: 3.57rem;
-		/* margin: 0.715rem 0.36rem 0.715rem 0.36rem; */
 		padding: 0.71rem 0 0 0.36rem;
 		float: left;
+	}
+	.icon1 img{
+		width: 2.14rem;
+		height: 2.14rem;
 	}
 	.icon2 {
 		width: 27.86rem;

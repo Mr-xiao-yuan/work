@@ -1,6 +1,8 @@
 <template>
 	<div id="cowryItem">
-		<op-tion class="icon"></op-tion>
+		<div class="icon" @click="isActive">
+			<img :src='img[$store.state.indexs]' alt="" >
+		</div>
 		<div class="cowryData">
 			<img src="https://s5.mogucdn.com/mlcdn/776a41/210303_2348bi7ac066k5icj9eb3aigg95a2_750x1000.png_750x1000.v1cAC.81.jpg"
 			 alt="">
@@ -23,18 +25,24 @@
 </template>
 
 <script>
-	import opTion from '@/components/common/option/opTion'
 	export default {
 		name: 'cowryItem',
 		data() {
 			return {
+				img: [
+					require('../../../assets/icon/weixuan.png'),
+					require('../../../assets/icon/yixuan.png')
+				],
 				num: 1
 			}
 		},
 		components: {
-			opTion
+			
 		},
 		methods: {
+			isActive(){
+				this.$store.state.indexs = this.$store.state.indexs==0?1:0;
+			},
 			jian(){
 				if(this.num != 1){
 					this.num--
@@ -56,13 +64,16 @@
 	}
 
 	.icon {
-		/* width: 2.86rem;
-		height: 9.29rem; */
 		margin: 3.575rem 0.36rem 3.575rem 0.36rem;
 		float: left;
 		left: 0;
 	}
-
+	
+	.icon img{
+		width: 2.14rem;
+		height: 2.14rem;
+	}
+	
 	.cowryData img {
 		width: 10rem;
 		height: 9.29rem;
